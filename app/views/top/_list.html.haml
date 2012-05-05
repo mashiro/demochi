@@ -1,0 +1,15 @@
+%table.table.table-striped.table-bordered.table-condensed
+  %thead
+    %tr
+      %th= sort_link_to @q, :id, 'Id'
+      %th= sort_link_to @q, :name, 'Name'
+      %th= sort_link_to @q, :name_roma, 'Name roma'
+
+  %tbody
+    - @characters.each do |character|
+      %tr[character]
+        %td= character.id
+        %td= character.name
+        %td= character.name_roma
+
+= paginate @characters, :theme => 'bootstrap'

@@ -1,0 +1,5 @@
+= search_form_for @q, :wrapper => :inline, :html => {:class => 'well form-inline'} do |f|
+  = f.input :name, :placeholder => 'Name', :required => false
+  = f.input :name_roma, :placeholder => 'Name roma', :required => false
+  = f.button :submit, 'Search'
+

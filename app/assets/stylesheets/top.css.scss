@@ -1,0 +1,17 @@
+#list {
+  table {
+    th:nth-child(1),
+    td:nth-child(1) {
+      text-align: center;
+    }
+  }
+
+  .sort_link {
+    &.asc:after { content: " \25b2"; }   
+    &.desc:after { content: " \25bc"; }
+  }
+
+  .pagination {
+    text-align: center;
+  }
+}

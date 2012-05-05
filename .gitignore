@@ -1,0 +1,7 @@
+.bundle
+*.sqlite3
+*.lock
+log/*.log
+tmp
+vendor
+doc

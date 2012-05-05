@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Demochi
+    %meta{:charset => 'utf-8'}
+    = stylesheet_link_tag 'application', :media => 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  %body
+    #site.container
+      .hero-unit
+        %h1
+          %a{:href => root_path} Demochi
+        %p This is a simple demo for |
+          #{link_to 'sakuramochi', 'https://github.com/mashiro/sakuramochi'} and |
+          #{link_to 'kashiwamochi', 'https://github.com/mashiro/kashiwamochi'} gem. |
+
+      = yield
